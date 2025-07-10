@@ -1,0 +1,549 @@
+etion with the four smallest disks correctly stacked and minimal moves needed to finish, scoring very high at 0.94.
+  Step 205: Score=0.220 - This state is disorganized with misplaced disks and order violations, indicating counterproductive progress and requiring backtracking, scoring very low at 0.22.
+  Step 206: Score=0.220 - This state is disorganized with misplaced disks and order violations, indicating counterproductive progress and requiring backtracking, scoring very low at 0.22.
+  Step 207: Score=0.970 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring the highest at 0.97.
+  Step 209: Score=0.220 - This state is disorganized with misplaced disks and order violations, indicating counterproductive progress and requiring backtracking, scoring very low at 0.22.
+  Step 210: Score=0.960 - This state is near completion with excellent staging and minimal moves left, scoring very high at 0.96.
+  Step 212: Score=0.970 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.97.
+  Step 215: Score=0.620 - This state has the two smallest disks correctly stacked on the target peg, a significant positive step toward the goal, with a clear path forward. Score reflects solid progress.
+  Step 216: Score=0.300 - This state is disorganized with misplaced disks and order violations, indicating counterproductive progress and requiring backtracking, justifying a low score of 0.30.
+  Step 217: Score=0.980 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 219: Score=0.750 - This state demonstrates substantial progress with disk 1 on the target peg and more disks grouped on the auxiliary peg, fewer disks on the source peg, and a good foundation for final moves, justifying a higher score of 0.75.
+  Step 220: Score=0.940 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring very high at 0.94.
+  Step 221: Score=0.970 - Best state with excellent staging and minimal moves left, near completion, scoring 0.97.
+  Step 222: Score=0.980 - This state is near completion with four smallest disks correctly stacked on the target peg and excellent staging, requiring minimal moves to finish, scoring very high at 0.98.
+  Step 224: Score=0.350 - This state shows minimal progress with disks scattered across pegs and no clear stack of smallest disks on the target peg, indicating inefficient staging and a longer path to completion, scoring 0.35.
+  Step 225: Score=0.220 - This state is disorganized and counterproductive with misplaced disks and order violations, scoring very low at 0.22.
+  Step 226: Score=0.700 - This state has the largest disk and the smallest disk correctly placed on the target peg, with other disks well staged on auxiliary pegs, indicating a clear path to completion. It shows the most substantial progress and best staging, deserv
+  Step 229: Score=0.910 - This state is near completion with excellent staging and minimal moves left, slightly better than the previous, warranting a very high score of 0.91.
+  Step 231: Score=0.220 - This state is disorganized and counterproductive with misplaced disks and order violations, scoring very low at 0.22.
+  Step 232: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 235: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring very high at 0.98.
+  Step 237: Score=0.980 - This state is near completion with excellent staging and minimal moves left, scoring very high at 0.98.
+  Step 238: Score=0.880 - This state is near completion with the four smallest disks correctly stacked on the target peg and only minor moves needed, justifying a high score of 0.88.
+  Step 240: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 242: Score=0.980 - This state is the best, near completion with the four smallest disks correctly stacked on the target peg and larger disks staged appropriately, requiring minimal moves to finish, scoring very high at 0.98.
+  Step 245: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish. It deserves a very high score of 0.98.
+  Step 247: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 250: Score=0.980 - This state is near completion with four smallest disks correctly stacked on the target peg and excellent staging, requiring minimal moves to finish, scoring very high at 0.98.
+  Step 251: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left, scoring very high at 0.98.
+  Step 254: Score=0.500 - This state has a small disk on peg A but a good stack on peg C, reflecting moderate progress with some inefficiency, scoring 0.50.
+  Step 255: Score=0.750 - This state shows substantial progress with smaller disks grouped on the target peg and larger disks staged on other pegs, indicating a clear path to completion, scoring 0.75.
+  Step 257: Score=0.980 - This state is the best, near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 260: Score=0.950 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish. It scores very high for near completion.
+  Step 261: Score=0.880 - This state is near completion with the four smallest disks correctly stacked on the target peg and only minor moves needed to finish, scoring 0.88.
+  Step 263: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging, scoring very high at 0.98.
+  Step 265: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg, representing near completion and a clear path to finishing the puzzle, scoring very high at 0.87.
+  Step 267: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 268: Score=0.220 - This state is disorganized with the largest disk isolated and smaller disks scattered without proper order, indicating counterproductive progress and requiring significant backtracking, justifying a very low score of 0.22.
+  Step 269: Score=0.600 - This state shows moderate progress with the largest disk on the target peg but smaller disks grouped on the auxiliary peg, indicating less efficient staging. The progress is solid but not optimal, resulting in a score of 0.60.
+  Step 270: Score=0.980 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 272: Score=0.350 - This state shows slightly better organization than the first, with one more smaller disk on the source peg, but still lacks a correct stack on the target peg. The scattered disks indicate limited progress, warranting a score of 0.35.
+  Step 273: Score=0.750 - This state demonstrates substantial progress with more disks correctly staged and a clearer path to completion. The configuration is well-organized, earning a higher score of 0.75.
+  Step 274: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 276: Score=0.920 - This state has the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, justifying a high score of 0.92.
+  Step 277: Score=0.600 - This state shows moderate progress with the largest disk on the target peg but smaller disks grouped on the auxiliary peg, indicating less efficient staging. The progress is solid but not optimal, resulting in a score of 0.60.
+  Step 278: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.98.
+  Step 280: Score=0.580 - This state demonstrates better organization with an additional disk moved from the source peg and improved staging on the auxiliary and target pegs. The configuration suggests a clearer path toward the goal, with more disks positioned to fa
+  Step 281: Score=0.330 - This state shows the largest disk correctly placed on the target peg, which is a positive sign, but the other disks are scattered across pegs with smaller disks still on the source peg. The isolated disk 7 on peg B indicates suboptimal stag
+  Step 282: Score=0.580 - This state shows the largest disk correctly placed on the target peg, which is a significant milestone. However, the next largest disks are still on other pegs, and the smaller disks remain on the source peg, indicating that while progress 
+  Step 283: Score=0.580 - This state shows moderate progress with disks grouped on peg A and peg B, but the smallest disk is not yet on the target peg C. The largest disk is isolated on peg C, indicating significant moves remain. The extensive action history suggest
+  Step 284: Score=0.220 - State 1 has disks scattered across pegs with no correct order on the target peg, showing minimal progress and some disorder. The configuration is counterproductive and requires significant backtracking, justifying a low score of 0.22.
+  Step 285: Score=0.930 - This state is near completion with the smallest disks correctly stacked on the target peg and larger disks well staged. Only a few moves remain to reach the goal, making it the best state with a high score of 0.93.
+  Step 287: Score=0.520 - State 2 has a similar distribution but with the smallest disk moved back to the source peg, reducing progress. The staging is less efficient, so it scores slightly lower at 0.52.
+  Step 288: Score=0.580 - This state demonstrates better staging and grouping of disks compared to the first, with some smaller disks on the target peg and improved organization. However, the largest disks remain mostly on the source peg, indicating moderate to subs
+  Step 289: Score=0.980 - This state is near completion with four smallest disks correctly stacked on the target peg and excellent staging, requiring minimal moves to finish, scoring very high at 0.98.
+  Step 292: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring very high at 0.98.
+  Step 294: Score=0.980 - This state is similar to the previous, with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, justifying a very high score of 0.98.
+  Step 296: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg and good staging of larger disks, indicating near completion and a clear path to finish. It justifies a high score of 0.87.
+  Step 297: Score=0.910 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.91.
+  Step 300: Score=0.980 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 301: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg and good staging of the remaining disks, indicating near completion with minimal moves left, justifying a high score of 0.87.
+  Step 304: Score=0.950 - This state also shows near completion with the four smallest disks stacked on the target peg and good staging of other disks, justifying a very high score of 0.95.
+  Step 306: Score=0.980 - This state is near completion with excellent staging and minimal moves left, similar to the best state, scoring 0.98.
+  Step 309: Score=0.980 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 0.98.
+  Step 310: Score=0.580 - This state shows moderate progress with the largest disk on the target peg but smaller disks grouped on the auxiliary peg, indicating less efficient staging. The progress is solid but not optimal, resulting in a score of 0.58.
+  Step 311: Score=0.980 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish. It represents near completion and deserves the highest score of 
+  Step 313: Score=0.580 - This state shows moderate progress with some smaller disks moved off the source peg and a better distribution, but the largest disks remain on the source peg and the target peg lacks a correct stack. It reflects solid progress and a clear p
+  Step 314: Score=0.980 - This state is near completion with four smallest disks correctly stacked on the target peg and excellent staging, requiring minimal moves to finish, scoring very high at 0.98.
+  Step 316: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg, representing near completion and a clear path to finishing the puzzle, scoring very high at 0.87.
+  Step 319: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 321: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of the remaining disks, indicating minimal moves left to finish, scoring very high at 0.98.
+  Step 323: Score=0.900 - This state shows the four smallest disks correctly stacked on the target peg with good staging of larger disks, indicating near completion, scoring 0.90.
+  Step 325: Score=0.980 - This state is the best, near completion with excellent staging and minimal moves left, scoring the highest at 0.98.
+  Step 327: Score=0.750 - This state has the smallest disk 1 correctly placed on the target peg C along with the two largest disks 8 and 7, while disks 6 to 2 remain on peg A and peg B is empty. This configuration shows substantial progress with better staging of th
+  Step 328: Score=0.480 - This state shows moderate progress with the largest disks on the target peg but smaller disks scattered, limiting efficient moves. The staging is suboptimal, requiring several moves to reorganize, so it scores 0.48.
+  Step 329: Score=0.700 - This state has the largest disks correctly placed on the target peg and the smallest disks staged on the auxiliary peg, showing better strategic positioning and clearer path to completion. The mid-sized disks remain on the source peg but th
+  Step 331: Score=0.730 - State 3 has the smallest disk on the target peg and four disks present there, showing substantial progress and good staging, scoring 0.73.
+  Step 333: Score=0.950 - This state has the largest disks still on the source peg but excellent staging of smaller disks on the target peg, indicating substantial progress and minimal moves left, deserving a very high score of 0.95.
+  Step 336: Score=0.980 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.98.
+  Step 338: Score=0.480 - This state shows moderate progress with some smaller disks grouped on the target peg and better staging than the initial state, but the smallest disks are not yet correctly stacked, warranting a moderate score of 0.48.
+  Step 339: Score=0.980 - This state is near completion with excellent staging and minimal moves left, scoring very high at 0.98.
+  Step 341: Score=0.980 - This state is near completion with excellent staging and minimal moves left, scoring very high at 0.98.
+  Step 343: Score=0.910 - This state demonstrates near completion with the four smallest disks correctly stacked on the target peg and good staging of larger disks. The configuration indicates minimal moves left to finish, warranting a high score of 0.91.
+  Step 345: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of the remaining disks, indicating minimal moves left to finish. It scores the highest at 0.99.
+  Step 348: Score=0.220 - This state is disorganized with misplaced smaller disks and scattered larger disks, requiring significant backtracking and reorganization. It shows counterproductive progress, justifying a low score of 0.22.
+  Step 349: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of the remaining disks, indicating minimal moves left to finish. It scores the highest at 0.99.
+  Step 351: Score=0.220 - This state is disorganized with misplaced smaller disks and scattered larger disks, requiring significant backtracking and reorganization, justifying a low score of 0.22.
+  Step 352: Score=0.200 - This state is disorganized with misplaced smaller disks and scattered larger disks, requiring significant backtracking and reorganization, justifying a low score.
+  Step 353: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg and good staging of the remaining disks, indicating near completion with minimal moves left, justifying a high score of 0.87.
+  Step 354: Score=0.990 - Near completion with the four smallest disks correctly stacked and excellent staging, scoring very high at 0.99.
+  Step 357: Score=0.220 - This state is disorganized with misplaced smaller disks and scattered larger disks, requiring significant backtracking and reorganization, justifying a low score of 0.22.
+  Step 358: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of the remaining disks, indicating minimal moves left to finish. It scores the highest at 0.99.
+  Step 360: Score=0.990 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.99.
+  Step 362: Score=0.870 - This state is near completion with the four smallest disks correctly stacked on the target peg and minor moves needed, justifying a high score of 0.87.
+  Step 364: Score=0.990 - Near completion with the four smallest disks correctly stacked and excellent staging, scoring very high at 0.99.
+  Step 367: Score=0.990 - This state is near completion with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.99.
+  Step 369: Score=0.290 - This state has the smallest disk on an auxiliary peg and disk 2 on the target peg, which is less aligned with the goal, reflecting minimal progress and a less direct path, scoring 0.29.
+  Step 370: Score=0.950 - This state is near completion with the smallest disks correctly stacked on the target peg and larger disks well staged, indicating minimal moves left and scoring the highest at 0.95.
+  Step 372: Score=0.600 - This state shows moderate progress with the largest disk on the target peg and smaller disks grouped on auxiliary pegs, indicating better staging and meaningful advancement, justifying a score of 0.60.
+  Step 373: Score=0.990 - This state is among the best, with optimal staging and the four smallest disks correctly stacked on the target peg, indicating minimal moves left to finish, scoring 0.99.
+  Step 375: Score=0.880 - This state is near completion with the four smallest disks correctly stacked on the target peg and good staging of larger disks, scoring 0.88.
+  Step 376: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.99.
+  Step 378: Score=0.990 - This state is near completion with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.99.
+  Step 380: Score=0.730 - This state demonstrates better progress with the two smallest disks grouped together on one peg, which is a key step toward moving larger disks. Although the largest disks are not yet on the target peg, the improved staging warrants a highe
+  Step 382: Score=0.300 - This state is disorganized with disks scattered across pegs and no clear stack of smallest disks on the target peg, indicating minimal progress and inefficiency, scoring low at 0.30.
+  Step 383: Score=0.420 - State 4 shows scattered smaller disks and less optimal staging, indicating moderate but less effective progress, scoring the lowest at 0.42.
+  Step 384: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish. It scores the highest at 1.00.
+  Step 386: Score=0.730 - This state has better staging of smaller disks and some larger disks positioned closer to the target peg, indicating solid progress and a score of 0.73.
+  Step 388: Score=0.990 - This state is near completion, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring 0.99.
+  Step 389: Score=0.920 - This state has the four smallest disks correctly stacked on the target peg and excellent staging of larger disks, indicating near completion with minimal moves left. It scores very high at 0.92, reflecting substantial progress and a clear p
+  Step 391: Score=0.580 - This state shows moderate progress with some smaller disks on the target peg but still some misplaced disks, indicating moderate progress but not near completion, scoring 0.58.
+  Step 392: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring 0.99.
+  Step 394: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 1.00.
+  Step 397: Score=0.700 - This state is near completion with the four smallest disks correctly stacked on the target peg and good staging of remaining disks, indicating minimal moves left, scoring 0.70.
+  Step 398: Score=0.220 - This state is disorganized with smaller disks scattered and order violations on the target peg, indicating counterproductive progress and requiring backtracking, scoring low at 0.22.
+  Step 399: Score=0.880 - This state also has the four smallest disks correctly stacked on the target peg but with slightly less optimal staging of larger disks, indicating near completion but slightly less advanced than the best state. It scores very high at 0.88.
+  Step 401: Score=0.990 - This state is near completion with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring very high at 0.99.
+  Step 402: Score=0.870 - This state has the four smallest disks correctly stacked on the target peg and good staging of the remaining disks, indicating near completion and minimal moves left to finish. This substantial progress merits a high score of 0.87.
+  Step 405: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and excellent staging of remaining disks, indicating minimal moves left to finish. Score is 1.00.
+  Step 406: Score=0.990 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left, scoring 0.99.
+  Step 408: Score=0.980 - This state shows excellent progress with the majority of smaller disks correctly stacked on the target peg and well-staged remaining disks, indicating near completion. It scores very high at 0.98.
+  Step 409: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 1.00.
+  Step 411: Score=0.870 - This state has the three smallest disks correctly stacked on the target peg and good staging, representing substantial progress, scoring 0.87.
+  Step 412: Score=0.730 - This state demonstrates better progress with the two smallest disks grouped together on one peg, a key step toward moving larger disks. Although the largest disks are not yet on the target peg, the improved staging warrants a higher score o
+  Step 414: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 1.00.
+  Step 417: Score=0.880 - This state is near completion with the four smallest disks correctly stacked on the target peg and minor moves needed to finish, but some smaller disks are scattered, slightly reducing efficiency, scoring 0.88.
+  Step 419: Score=1.000 - This state is the best, with the four smallest disks correctly stacked on the target peg and optimal staging of remaining disks, indicating minimal moves left to finish, scoring the highest at 1.00.
+✅ Success! Solution in 419 moves:
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='C' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='B' to_tower='A'
+  from_tower='A' to_tower='C'
+  from_tower='A' to_tower='B'
+  from_tower='C' to_tower='A'
+  from_tower='A' to_tower='B'
+  from_tower='A' to_tower='C'
+  from_tower='B' to_tower='A'
+  from_tower='B' to_tower='C'
+  from_tower='A' to_tower='C'
+Efficiency: 255/419 = 0.61
+(venv) (base) ➜  llm_reasoning_project git:(master) ✗ 
