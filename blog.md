@@ -76,48 +76,155 @@ This approach of using narrowly scoped LLM function calls brings several critica
 
 ## Illustrative Example: Tower of Hanoi Revisited
 
-To concretely illustrate this scoped approach and directly address Apple's findings, let's revisit the Tower of Hanoi puzzle. I've implemented a Tower of Hanoi solver—not because solving puzzles is the goal, but because it provides a clear, controlled environment to demonstrate the hybrid methodology. 
+To concretely illustrate this scoped approach and directly address Apple's findings, let's revisit the Tower of Hanoi puzzle. I've implemented a Tower of Hanoi solver—not because solving puzzles is the goal, but because it provides a clear, controlled environment to demonstrate the hybrid methodology in action.
 
 Tower of Hanoi is a classic mathematical puzzle where you must move a stack of disks from one peg to another, following two simple rules: only one disk can be moved at a time, and a larger disk cannot be placed on top of a smaller one. While conceptually simple, the puzzle becomes exponentially more complex as the number of disks increases—the optimal solution for 8 disks requires exactly 255 moves.
 
 Apple's research demonstrated that pure LLM-based approaches fail catastrophically on this problem, particularly for puzzles with 8 or more disks, where the models experience complete accuracy collapse despite the problem's well-defined structure and rules.
 
-Rather than asking an LLM to solve Tower of Hanoi end-to-end, my system uses scoped LLM calls within a beam search framework: 
+### The Hybrid Architecture in Action
 
-The **state evaluation function** receives a structured representation of the current game state (which towers contain which disks) along with the goal state, and returns a numerical score indicating how promising this position appears for reaching the solution. 
+Rather than asking an LLM to solve Tower of Hanoi end-to-end, my system uses two scoped LLM functions within a beam search framework:
 
-The **move ranking function** takes the current state and a list of valid moves, then returns those moves ranked by strategic value—which moves appear most likely to lead toward the goal.
+**State Evaluation Function**: Receives structured game states and returns numerical assessments of progress toward the goal.
 
-**Here's the key differentiator:** Neither LLM function requires hand-coded Tower of Hanoi strategy or domain-specific heuristics. 
+**Action Ranking Function**: Takes current states and valid moves, returning those moves ranked by strategic value.
 
-Unlike traditional AI approaches that require developers to manually encode game-specific knowledge (like "expose larger disks" or "build the target tower from bottom up"), the LLM functions simply receive the game rules, current state information, and goal description. The LLM leverages its pattern recognition capabilities to assess positions and rank moves based on the strategic patterns it has learned, without requiring explicit programming of game logic.
+Here's the crucial insight: **Neither LLM function contains hand-coded Tower of Hanoi strategy**. Instead, they rely on general reasoning principles about progress and effort required.
+
+### Structured Data Models as Interface Contracts
+
+The LLM functions operate on precise data structures, not free-form text descriptions:
+
+```python
+class TowersModel(StateModel):
+    A: List[int]  # Disks on peg A (bottom to top)
+    B: List[int]  # Disks on peg B  
+    C: List[int]  # Disks on peg C
+
+class MoveModel(ActionModel):
+    from_tower: Literal["A", "B", "C"]
+    to_tower: Literal["A", "B", "C"]
+
+class EvaluationModel(BaseModel):
+    score: float = Field(min_value=0.0, max_value=1.0)
+    reasoning: str
+```
+
+This structured approach ensures the LLM receives precise, unambiguous input and returns data that can be directly consumed by the algorithmic framework—no text parsing required.
+
+### LLM Evaluation Without Game-Specific Heuristics
+
+The state evaluator signature demonstrates how we guide the LLM to reason about progress without encoding specific game mechanics:
+
+```python
+class HanoiBatchStateEvaluator(BatchStateEvaluator):
+    """
+    EVALUATION METHODOLOGY:
+    For each state, reason about how much work remains to reach the goal state.
+    Your score should reflect your assessment of how close this state is to completion.
+
+    CRITICAL REASONING PRINCIPLE:
+    Consider the actual effort required to reach the goal, not just superficial 
+    similarities to the target. Some configurations may appear advanced but 
+    actually require significant additional work.
+    """
+```
+
+Notice what's **not** in this prompt: no instructions about "larger disks first," no specific Tower of Hanoi strategies, no mathematical formulas. The LLM is simply asked to reason about remaining effort—a general problem-solving concept applicable to any domain.
+
+### Real Output: LLM Reasoning in Practice
+
+Here's how the LLM actually evaluates states during an 8-disk solve, showing sophisticated reasoning without explicit game knowledge:
+
+```
+Step 207: Score=0.970 - This state is the best, with the four smallest disks correctly 
+stacked on the target peg and excellent staging of the remaining disks, indicating 
+minimal moves left to finish, scoring the highest at 0.97.
+
+Step 225: Score=0.220 - This state is disorganized and counterproductive with misplaced 
+disks and order violations, scoring very low at 0.22.
+
+Step 329: Score=0.700 - This state has the largest disks correctly placed on the target 
+peg and the smallest disks staged on the auxiliary peg, showing better strategic 
+positioning and clearer path to completion.
+```
+
+The LLM demonstrates nuanced understanding: recognizing "excellent staging," identifying "counterproductive" configurations, and assessing "strategic positioning"—all without being explicitly taught these Tower of Hanoi concepts.
+
+### Division of Labor: Algorithm Handles Systematic Exploration
+
+While the LLM provides intelligent evaluation, the beam search algorithm handles:
+
+- **Constraint Enforcement**: Ensuring all moves follow Tower of Hanoi rules
+- **State Space Exploration**: Systematically generating and managing candidate states  
+- **Goal Detection**: Recognizing when the puzzle is solved
+- **Search Strategy**: Maintaining beam pools, backup states, and depth progression
 
 ```mermaid
 graph TD
-    A[Problem Input] --> B[Traditional Search Algorithm]
-    B --> C{Explore State Space}
-    C --> D[Request State Evaluation]
-    C --> E[Request Move Ranking]
-    D --> F[LLM Engine]
-    E --> F
-    F --> G[Scored States]
-    F --> H[Ranked Actions]
-    G --> I[Beam Selection]
-    H --> I
-    I --> J{Goal Reached?}
-    J -->|No| C
-    J -->|Yes| K[Solution Found]
+    A[Initial Tower State<br/>All disks on peg A] --> B[Beam Search Algorithm]
     
-    style F fill:#e1f5fe
-    style B fill:#f3e5f5
-    style I fill:#f3e5f5
+    B --> C[Generate Valid Actions<br/>from Game Rules]
+    C --> D[Action Ranking]
+    
+    D --> E[HanoiActionRanker<br/>LLM Function]
+    E --> F["Input:<br/>TowersModel state<br/>List of MoveModels<br/>Goal TowersModel"]
+    
+    F --> G[LLM]
+    G --> H["Output:<br/>RankedActionsModel<br/>(ordered moves + reasoning)"]
+    
+    H --> I[Apply Best Actions<br/>Create New States]
+    I --> J[State Evaluation]
+    
+    J --> K[HanoiStateEvaluator<br/>LLM Function]
+    K --> L["Input:<br/>TowersModel state<br/>Goal TowersModel<br/>Move history"]
+    
+    L --> G
+    G --> M["Output:<br/>EvaluationModel<br/>(score + reasoning)"]
+    
+    M --> N[Select Best States<br/>for Next Beam]
+    N --> O{Goal Reached?}
+    
+    O -->|Yes| P[🎉 Solution Found!]
+    O -->|No| Q[Continue Search<br/>Next Depth Level]
+    Q --> C
+    
+    style G fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style E fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style K fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style I fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style N fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style P fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
 ```
 
-This division of labor proves the concept effectively. The system successfully handles Tower of Hanoi puzzles with 8 disks—precisely the complexity level where Apple's research shows pure LLM approaches fail catastrophically. The key insight is that the LLM doesn't need to understand the complete algorithmic solution; it just needs to recognize patterns that indicate progress toward the goal within its limited scope.
+### Proving the Concept: Success Where Pure LLM Approaches Fail
 
-Importantly, beam search is just one algorithmic approach among many. The same scoped LLM functions could equally well support Monte Carlo Tree Search (MCTS), grid search, genetic algorithms, or hybrid approaches combining traditional optimization with deep reinforcement learning. The choice of algorithm depends on the specific problem characteristics—search space size, computational constraints, and solution quality requirements.
+The system successfully solved the 8-disk Tower of Hanoi puzzle—precisely the complexity level where Apple's research shows pure LLM approaches experience complete failure:
 
-The structured input/output approach is what makes this flexibility possible. Because the LLM functions have well-defined contracts, they can be plugged into any algorithmic framework that needs state evaluation or action ranking capabilities. This modularity is crucial for real-world applications where different problems may require different algorithmic strategies.
+```
+✅ Success! Solution in 419 moves:
+Efficiency: 255/419 = 0.61
+```
+
+The solution required 419 moves compared to the optimal 255, achieving 61% efficiency. While not optimal, this represents a fundamental breakthrough: **the system found a valid solution to a problem that defeats end-to-end LLM reasoning**.
+
+### Key Insights from the Results
+
+The execution logs reveal several crucial insights about the hybrid approach:
+
+**1. Meaningful Score Differentiation**: The LLM successfully distinguished between promising states (0.97-1.0) and counterproductive ones (0.22-0.30), providing the algorithmic framework with clear guidance for state selection.
+
+**2. Emergent Strategic Understanding**: Without explicit programming, the LLM learned to recognize "excellent staging," "strategic positioning," and "minimal moves left"—concepts that emerge naturally from reasoning about the goal state.
+
+**3. Robust Error Recovery**: When the search encountered poor states (scoring 0.22), the algorithm's backup pool mechanism allowed recovery, guided by LLM evaluations of alternative paths.
+
+**4. Scalable Architecture**: The same LLM functions could be plugged into different search algorithms (Monte Carlo Tree Search, genetic algorithms, etc.) without modification, demonstrating the modularity of the scoped function approach.
+
+The critical insight is that the LLM doesn't need to understand the complete algorithmic solution; it just needs to recognize patterns that indicate progress toward the goal within its limited scope. The algorithm handles the systematic reasoning that LLMs struggle with, while the LLM provides the nuanced evaluation that would be complex to encode manually.
+
+This proves the fundamental thesis: by treating LLMs as intelligent software components with well-defined interfaces rather than end-to-end reasoning engines, we can build systems that exceed what either approach could achieve independently.
 
 ## Beyond Toy Problems: Real-World Applications
 
